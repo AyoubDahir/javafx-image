@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home.Controller.imageController">
+   <children>
+      <ImageView fx:id="imgview" fitHeight="131.0" fitWidth="122.0" layoutX="145.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnopen" layoutX="141.0" layoutY="203.0" mnemonicParsing="false" text="open" />
+      <TextField fx:id="txtname" layoutX="275.0" layoutY="93.0" prefHeight="25.0" prefWidth="236.0" promptText="name" />
+      <TextField fx:id="txtphone" layoutX="275.0" layoutY="138.0" prefHeight="25.0" prefWidth="236.0" promptText="phone" />
+      <Button fx:id="btninsert" layoutX="274.0" layoutY="191.0" mnemonicParsing="false" onAction="#insertFunction" text="insert" />
+      <TableView fx:id="tblimage" layoutX="16.0" layoutY="266.0" prefHeight="200.0" prefWidth="576.0">
+        <columns>
+          <TableColumn fx:id="colimg" prefWidth="203.0" text="Image" />
+          <TableColumn fx:id="colname" prefWidth="177.0" text="name" />
+            <TableColumn fx:id="colphone" prefWidth="159.0" text="phone" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

@@ -1,0 +1,23 @@
+package Home;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import Home.utilities.*;
+
+public class Main extends Application {
+
+    @Override
+    public void start(Stage primaryStage) throws Exception
+    {
+        url.show("ytestm","/Home/view/image.fxml");
+   
+    }
+
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
